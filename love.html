@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -123,12 +124,20 @@
 <body>
     <div id="child">
         <h4>💗我会永远陪着你</h4>
-        <audio src="" style="opacity: 0;" autoplay></audio>
+        <audio src="" style="opacity: 0;" autoplay id="audio"></audio>
     </div>
     <!--这里写名字❤！！！-->
     <canvas id="pinkboard"></canvas>
     <!-- <canvas id= "canvas"></canvas>  -->
     <script>
+       let __audio = document.createElement("audio");
+       // ❤️ 修改音乐在这里
+       __audio.src = "http://svsaou3hq.hd-bkt.clouddn.com/audio/c313_f818_d691_ebbb696ac3a70704cd8cab4489fa0acd.mp3";
+       __audio.loop = true;
+       __audio.volume = 0.6;
+       window.onclick = function () {
+         __audio.play();
+       };
         /*
        * Settings
        */
